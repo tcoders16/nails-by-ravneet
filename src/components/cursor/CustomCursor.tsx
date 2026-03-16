@@ -7,9 +7,16 @@ export default function CustomCursor() {
   const ringRef = useRef<HTMLDivElement>(null);
   const [isTouch, setIsTouch] = useState(true);
 
+  // Effect 1: detect touch — runs once, triggers re-render on desktop
   useEffect(() => {
-    if (window.matchMedia("(hover: none)").matches) return;
-    setIsTouch(false);
+    if (!window.matchMedia("(hover: none)").matches) {
+      setIsTouch(false);
+    }
+  }, []);
+
+  // Effect 2: set up GSAP only after cursor elements are mounted (isTouch === false)
+  useEffect(() => {
+    if (isTouch) return;
 
     const dot  = dotRef.current!;
     const ring = ringRef.current!;
@@ -32,7 +39,7 @@ export default function CustomCursor() {
       el.addEventListener("mouseleave", onLeave);
     });
     return () => window.removeEventListener("mousemove", onMove);
-  }, []);
+  }, [isTouch]);
 
   if (isTouch) return null;
 
