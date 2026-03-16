@@ -32,6 +32,11 @@ export const metadata: Metadata = {
   description:
     "Bespoke nail art that tells your story. Premium gel, chrome, and custom nail art by Tisha — where beauty meets artistry.",
   keywords: ["nail art", "nail salon", "gel nails", "chrome nails", "luxury nail studio"],
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   openGraph: {
     title: "Nails by Tisha",
     description: "Bespoke nail art that tells your story.",
