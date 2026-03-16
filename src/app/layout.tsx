@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Sans, Pinyon_Script } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 // Cormorant Garamond — ultra-luxury high-contrast fashion serif (used by Vogue, luxury brands)
@@ -56,6 +57,7 @@ export default function RootLayout({
     >
       <body className="antialiased overflow-x-hidden">
         {children}
+        <Analytics />
       </body>
     </html>
   );
