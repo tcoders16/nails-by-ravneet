@@ -30,3 +30,7 @@ export const staggerContainer = (stagger = 0.08, delay = 0) => ({
   hidden:  {},
   visible: { transition: { staggerChildren: stagger, delayChildren: delay } },
 });
+export const charReveal: Variants = {
+  hidden:  { opacity: 0, y: "110%" },
+  visible: { opacity: 1, y: "0%", transition: { duration: 0.55, ease: EASE } },
+};

@@ -106,7 +106,7 @@ export default function ShopPage() {
         {/* Grid texture */}
         <div style={{ position: "absolute", inset: 0, backgroundImage: "linear-gradient(rgba(255,255,255,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.025) 1px,transparent 1px)", backgroundSize: "60px 60px", opacity: 0.5 }} />
 
-        <motion.div style={{ y: heroY, opacity: heroOpacity }} className="px-6 md:px-10" style={{ position: "relative", zIndex: 1, textAlign: "center", maxWidth: 800, margin: "0 auto" }}>
+        <motion.div style={{ y: heroY, opacity: heroOpacity, position: "relative", zIndex: 1, textAlign: "center", maxWidth: 800, margin: "0 auto" }} className="px-6 md:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: EASE }}>
             <span style={{ fontFamily: "var(--font-poppins)", fontSize: "0.62rem", fontWeight: 500, letterSpacing: "0.32em", textTransform: "uppercase", color: "rgba(255,255,255,0.4)" }}>✦ &nbsp; Tisha&apos;s Curated Picks</span>
           </motion.div>
