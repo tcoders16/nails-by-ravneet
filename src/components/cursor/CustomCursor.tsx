@@ -21,6 +21,11 @@ export default function CustomCursor() {
     const dot  = dotRef.current!;
     const ring = ringRef.current!;
 
+    // Let GSAP own the full transform — xPercent/yPercent handles centering
+    // so there's no conflict with inline CSS transform
+    gsap.set(dot,  { xPercent: -50, yPercent: -50 });
+    gsap.set(ring, { xPercent: -50, yPercent: -50 });
+
     const xDot  = gsap.quickTo(dot,  "x", { duration: 0.04 });
     const yDot  = gsap.quickTo(dot,  "y", { duration: 0.04 });
     const xRing = gsap.quickTo(ring, "x", { duration: 0.2, ease: "power3.out" });
@@ -51,7 +56,6 @@ export default function CustomCursor() {
           position: "fixed", top: 0, left: 0, pointerEvents: "none", zIndex: 9999,
           width: 6, height: 6,
           background: "#fff", borderRadius: "50%",
-          transform: "translate(-50%,-50%)",
           willChange: "transform",
           mixBlendMode: "difference",
         }}
@@ -62,7 +66,6 @@ export default function CustomCursor() {
           position: "fixed", top: 0, left: 0, pointerEvents: "none", zIndex: 9998,
           width: 28, height: 28,
           border: "1.5px solid #fff", borderRadius: "50%",
-          transform: "translate(-50%,-50%)",
           willChange: "transform",
           mixBlendMode: "difference",
         }}
