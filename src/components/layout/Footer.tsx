@@ -20,7 +20,7 @@ export default function Footer() {
         >
           {/* Brand */}
           <div>
-            <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "2rem", color: "#fff", lineHeight: 1 }}>Nails by Tisha</div>
+            <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "2rem", color: "#fff", lineHeight: 1 }}>Nails by Ravneet</div>
             <div style={{ fontFamily: "var(--font-poppins)", fontSize: "0.6rem", letterSpacing: "0.28em", textTransform: "uppercase", color: "#555", marginTop: "5px" }}>Luxury Nail Studio</div>
           </div>
 
@@ -60,7 +60,7 @@ export default function Footer() {
         {/* Bottom row */}
         <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: "0.5rem", alignItems: "center" }}>
           <p style={{ fontFamily: "var(--font-poppins)", fontSize: "0.68rem", color: "#444" }}>
-            © {new Date().getFullYear()} Nails by Tisha. All rights reserved.
+            © {new Date().getFullYear()} Nails by Ravneet. All rights reserved.
           </p>
           <a href="/contact" style={{ fontFamily: "var(--font-poppins)", fontSize: "0.68rem", color: "#555", textDecoration: "none", transition: "color 0.2s" }}
             onMouseEnter={e => e.currentTarget.style.color = "#fff"}

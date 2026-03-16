@@ -130,7 +130,7 @@ export default function AdminPage() {
       }}>
         {/* Logo */}
         <div>
-          <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "2rem", color: "#fff", lineHeight: 1 }}>Nails by Tisha</div>
+          <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "2rem", color: "#fff", lineHeight: 1 }}>Nails by Ravneet</div>
           <div style={{ fontFamily: "var(--font-poppins)", fontSize: "0.5rem", letterSpacing: "0.35em", textTransform: "uppercase", color: "rgba(255,255,255,0.25)", marginTop: "4px" }}>Admin Portal</div>
         </div>
 
@@ -139,7 +139,7 @@ export default function AdminPage() {
           <div style={{ position: "relative", textAlign: "center" }}>
             <div style={{ position: "absolute", inset: "-60px", borderRadius: "50%", background: "radial-gradient(circle, rgba(139,25,48,0.15) 0%, transparent 70%)", pointerEvents: "none" }} />
             <div style={{ fontFamily: "var(--font-playfair)", fontSize: "clamp(4rem,8vw,7rem)", fontWeight: 700, lineHeight: 0.85, color: "rgba(255,255,255,0.04)", userSelect: "none" }}>
-              Tisha
+              Ravneet
             </div>
             <div style={{ marginTop: "2rem", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
               {["Manage your availability", "View upcoming appointments", "Join video consultations"].map((t, i) => (
@@ -154,7 +154,7 @@ export default function AdminPage() {
         </div>
 
         <div style={{ fontFamily: "var(--font-poppins)", fontSize: "0.6rem", color: "rgba(255,255,255,0.15)", letterSpacing: "0.1em" }}>
-          © {new Date().getFullYear()} Nails by Tisha · All rights reserved
+          © {new Date().getFullYear()} Nails by Ravneet · All rights reserved
         </div>
       </div>
 
@@ -167,7 +167,7 @@ export default function AdminPage() {
         >
           {/* Mobile logo */}
           <div className="lg:hidden" style={{ marginBottom: "2.5rem", textAlign: "center" }}>
-            <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "1.8rem", color: "#fff", lineHeight: 1 }}>Nails by Tisha</div>
+            <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "1.8rem", color: "#fff", lineHeight: 1 }}>Nails by Ravneet</div>
             <div style={{ fontFamily: "var(--font-poppins)", fontSize: "0.5rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "rgba(255,255,255,0.3)", marginTop: "4px" }}>Admin Portal</div>
           </div>
 
@@ -177,7 +177,7 @@ export default function AdminPage() {
           </div>
 
           <h1 style={{ fontFamily: "var(--font-playfair)", fontSize: "2rem", fontWeight: 700, color: "#fff", lineHeight: 1, marginBottom: "0.5rem" }}>
-            Welcome back,<br />Tisha
+            Welcome back,<br />Ravneet
           </h1>
           <p style={{ fontFamily: "var(--font-poppins)", fontSize: "0.8rem", color: "rgba(255,255,255,0.35)", marginBottom: "2.5rem", lineHeight: 1.6 }}>
             Sign in to manage your calendar and appointments.
@@ -262,7 +262,7 @@ export default function AdminPage() {
       {/* Topbar */}
       <div style={{ background: "#fff", borderBottom: "1px solid #E8E4DE", padding: "0.9rem 1.5rem", display: "flex", alignItems: "center", justifyContent: "space-between", position: "sticky", top: 0, zIndex: 50 }}>
         <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
-          <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "1.3rem", color: "#111" }}>Nails by Tisha</div>
+          <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "1.3rem", color: "#111" }}>Nails by Ravneet</div>
           <span style={{ fontFamily: "var(--font-poppins)", fontSize: "0.5rem", fontWeight: 600, letterSpacing: "0.2em", textTransform: "uppercase", color: "#fff", background: "#8B1930", padding: "0.2rem 0.6rem", borderRadius: "100px" }}>Admin</span>
         </div>
         <div style={{ display: "flex", gap: "0.4rem", alignItems: "center" }}>

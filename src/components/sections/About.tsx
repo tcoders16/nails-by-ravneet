@@ -25,7 +25,7 @@ export default function About() {
           <div style={{ position: "relative" }}>
             <img
               src="/images/hero/about.jpg"
-              alt="Tisha — Nail Artist"
+              alt="Ravneet — Nail Artist"
               style={{
                 width: "100%", maxWidth: 460,
                 aspectRatio: "3/4",
@@ -69,7 +69,7 @@ export default function About() {
               borderLeft: "2px solid #8B1930",
               borderRadius: "10px",
             }}>
-              <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "1.3rem", color: "#111", lineHeight: 1 }}>Tisha</div>
+              <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "1.3rem", color: "#111", lineHeight: 1 }}>Ravneet</div>
               <div className="eyebrow" style={{ marginTop: "2px" }}>Nail Artist & Educator</div>
             </div>
           </div>
@@ -102,13 +102,13 @@ export default function About() {
           <div style={{ width: 32, height: 1.5, background: "#8B1930", marginBottom: "1.5rem" }} />
 
           <p style={{ fontFamily: "var(--font-poppins)", fontSize: "0.87rem", color: "#555", lineHeight: 1.8, marginBottom: "1rem" }}>
-            It started at age fourteen with a bottle of drugstore polish and a bathroom mirror. Tisha
+            It started at age fourteen with a bottle of drugstore polish and a bathroom mirror. Ravneet
             wasn&apos;t trying to build a brand — she was just obsessed. Flash-forward eight years, and that
             obsession turned into a studio where every client leaves with nails that feel like a piece of
             wearable art.
           </p>
           <p style={{ fontFamily: "var(--font-poppins)", fontSize: "0.87rem", color: "#555", lineHeight: 1.8, marginBottom: "2rem" }}>
-            No rushed appointments. No cookie-cutter sets. Just Tisha, her tools, and a genuine
+            No rushed appointments. No cookie-cutter sets. Just Ravneet, her tools, and a genuine
             conversation about exactly what you want — then delivering it better than you imagined.
           </p>
 
@@ -121,7 +121,7 @@ export default function About() {
             ))}
           </div>
 
-          <MagneticButton href="#booking">Book with Tisha</MagneticButton>
+          <MagneticButton href="#booking">Book with Ravneet</MagneticButton>
         </SectionReveal>
       </div>
     </section>

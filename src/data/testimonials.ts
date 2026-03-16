@@ -12,7 +12,7 @@ export const testimonials: Testimonial[] = [
     id: 1,
     name: "Sophia R.",
     service: "Chrome Powder",
-    quote: "Tisha is an absolute genius. My rose gold chrome nails had everyone asking where I got them. Won't go anywhere else.",
+    quote: "Ravneet is an absolute genius. My rose gold chrome nails had everyone asking where I got them. Won't go anywhere else.",
     rating: 5, avatar: "/images/avatars/a1.jpg",
   },
   {
@@ -40,7 +40,7 @@ export const testimonials: Testimonial[] = [
     id: 5,
     name: "Jessica L.",
     service: "Nail Sculpting",
-    quote: "I've tried so many nail techs and Tisha is BY FAR the best. Perfect shape, perfect thickness, no lifting.",
+    quote: "I've tried so many nail techs and Ravneet is BY FAR the best. Perfect shape, perfect thickness, no lifting.",
     rating: 5, avatar: "/images/avatars/a5.jpg",
   },
   {

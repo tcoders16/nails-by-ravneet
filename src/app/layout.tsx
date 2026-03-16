@@ -28,9 +28,9 @@ const pinyonScript = Pinyon_Script({
 });
 
 export const metadata: Metadata = {
-  title: "Nails by Tisha | Luxury Nail Art Studio",
+  title: "Nails by Ravneet | Luxury Nail Art Studio",
   description:
-    "Bespoke nail art that tells your story. Premium gel, chrome, and custom nail art by Tisha — where beauty meets artistry.",
+    "Bespoke nail art that tells your story. Premium gel, chrome, and custom nail art by Ravneet — where beauty meets artistry.",
   keywords: ["nail art", "nail salon", "gel nails", "chrome nails", "luxury nail studio"],
   icons: {
     icon: "/favicon.svg",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     apple: "/favicon.svg",
   },
   openGraph: {
-    title: "Nails by Tisha",
+    title: "Nails by Ravneet",
     description: "Bespoke nail art that tells your story.",
     type: "website",
   },

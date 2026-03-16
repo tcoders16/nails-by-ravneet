@@ -24,8 +24,8 @@ export default function CallPage() {
   const peerRef = useRef<import("peerjs").Peer | null>(null);
   const callRef = useRef<import("peerjs").MediaConnection | null>(null);
 
-  const hostId = `nailstisha-${roomId}-host`;
-  const guestId = `nailstisha-${roomId}-guest`;
+  const hostId = `nailsravneet-${roomId}-host`;
+  const guestId = `nailsravneet-${roomId}-guest`;
 
   const cleanup = useCallback(() => {
     callRef.current?.close();
@@ -147,7 +147,7 @@ export default function CallPage() {
 
       {/* Brand */}
       <div style={{ position: "fixed", top: "1.25rem", left: "1.5rem", fontFamily: "var(--font-great-vibes)", fontSize: "1.4rem", color: "#fff", opacity: 0.7 }}>
-        Nails by Tisha
+        Nails by Ravneet
       </div>
 
       {/* Share link */}
@@ -214,7 +214,7 @@ export default function CallPage() {
                 </div>
               )}
               <div style={{ position: "absolute", bottom: "0.75rem", left: "0.75rem", fontFamily: "var(--font-poppins)", fontSize: "0.62rem", color: "rgba(255,255,255,0.7)", background: "rgba(0,0,0,0.5)", padding: "0.25rem 0.6rem", borderRadius: "6px" }}>
-                {role === "host" ? "Client" : "Tisha"}
+                {role === "host" ? "Client" : "Ravneet"}
               </div>
             </div>
 
@@ -260,7 +260,7 @@ export default function CallPage() {
       {status === "ended" && (
         <div style={{ textAlign: "center" }}>
           <h2 style={{ fontFamily: "var(--font-playfair)", fontSize: "2rem", fontWeight: 700, color: "#fff", marginBottom: "0.75rem" }}>Call Ended</h2>
-          <p style={{ fontFamily: "var(--font-poppins)", fontSize: "0.82rem", color: "rgba(255,255,255,0.45)", marginBottom: "2rem" }}>Thanks for your consultation with Tisha!</p>
+          <p style={{ fontFamily: "var(--font-poppins)", fontSize: "0.82rem", color: "rgba(255,255,255,0.45)", marginBottom: "2rem" }}>Thanks for your consultation with Ravneet!</p>
           <a href="/" style={{ background: "#8B1930", color: "#fff", fontFamily: "var(--font-poppins)", fontSize: "0.7rem", letterSpacing: "0.18em", textTransform: "uppercase", padding: "0.9rem 2.5rem", borderRadius: "100px", textDecoration: "none", display: "inline-block" }}>
             Back to Site
           </a>

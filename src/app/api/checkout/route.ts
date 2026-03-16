@@ -54,7 +54,7 @@ export async function POST(req: NextRequest) {
     cancel_url: `${origin}/shop?cancelled=1`,
     shipping_address_collection: { allowed_countries: ["US", "CA", "GB", "AU", "IN"] },
     billing_address_collection: "required",
-    metadata: { source: "nails-by-tisha" },
+    metadata: { source: "nails-by-ravneet" },
   });
 
   return NextResponse.json({ url: session.url });

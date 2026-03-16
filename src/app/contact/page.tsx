@@ -26,7 +26,7 @@ const INFO = [
   {
     icon: <Mail size={18} />,
     label: "Email",
-    lines: ["hello@nailsbytisha.com"],
+    lines: ["hello@nailsbyravneet.com"],
     note: "I respond within 24 hours",
   },
   {
@@ -135,7 +135,7 @@ export default function ContactPage() {
                   onMouseLeave={e => e.currentTarget.style.color = "#111"}
                 >
                   <Instagram size={18} />
-                  @nailsbytisha
+                  @nailsbyravneet
                 </a>
               </div>
 
@@ -171,7 +171,7 @@ export default function ContactPage() {
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                           <label style={labelStyle}>Your Name</label>
-                          <input type="text" placeholder="Tisha" style={inputBase} value={form.name} onChange={e => setForm(f => ({ ...f, name: e.target.value }))} onFocus={onFocus} onBlur={onBlur} required />
+                          <input type="text" placeholder="Your name" style={inputBase} value={form.name} onChange={e => setForm(f => ({ ...f, name: e.target.value }))} onFocus={onFocus} onBlur={onBlur} required />
                         </div>
                         <div>
                           <label style={labelStyle}>Email</label>

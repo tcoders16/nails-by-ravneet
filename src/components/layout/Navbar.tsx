@@ -69,7 +69,7 @@ export default function Navbar() {
               lineHeight: 1,
               whiteSpace: "nowrap",
             }}>
-              Tisha
+              Ravneet
             </div>
             {/* Crimson rule + tagline */}
             <div style={{ display: "flex", alignItems: "center", gap: "0.4rem", marginTop: "3px" }}>
