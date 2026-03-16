@@ -1,17 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-  <!-- Crimson background circle -->
+  <!-- Crimson background -->
   <circle cx="16" cy="16" r="16" fill="#8B1930"/>
-  <!-- Thin inner ring -->
-  <circle cx="16" cy="16" r="13" stroke="rgba(255,255,255,0.25)" stroke-width="0.6"/>
-  <!-- Letter R in white -->
-  <text
-    x="16"
-    y="22"
-    text-anchor="middle"
-    font-family="Georgia, serif"
-    font-size="18"
-    font-style="italic"
-    fill="white"
-    letter-spacing="-0.5"
-  >R</text>
+  <!-- Inner ring -->
+  <circle cx="16" cy="16" r="12.5" stroke="rgba(255,255,255,0.3)" stroke-width="0.6"/>
+  <!-- R stem -->
+  <line x1="10" y1="9" x2="10" y2="23" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <!-- R bowl -->
+  <path d="M10 9 L16 9 C19.5 9 21.5 11 21.5 13.5 C21.5 16 19.5 17.5 16 17.5 L10 17.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- R leg -->
+  <line x1="15.5" y1="17.5" x2="22" y2="23" stroke="white" stroke-width="2" stroke-linecap="round"/>
 </svg>

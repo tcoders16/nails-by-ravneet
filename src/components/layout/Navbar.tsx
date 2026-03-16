@@ -47,43 +47,60 @@ export default function Navbar() {
           }}
         >
           {/* ── Logo mark ── */}
-          <a href="/" style={{ textDecoration: "none", flexShrink: 0, lineHeight: 1 }} onClick={close}>
-            {/* "NAILS BY" eyebrow */}
-            <div style={{
-              fontFamily: "var(--font-poppins)",
-              fontSize: "0.38rem",
-              fontWeight: 600,
-              letterSpacing: "0.38em",
-              textTransform: "uppercase",
-              color: "#8B1930",
-              marginBottom: "1px",
-              whiteSpace: "nowrap",
-            }}>
-              Nails by
-            </div>
-            {/* Large script name */}
-            <div style={{
-              fontFamily: "var(--font-great-vibes)",
-              fontSize: "1.75rem",
-              color: "#111",
-              lineHeight: 1,
-              whiteSpace: "nowrap",
-            }}>
-              Ravneet
-            </div>
-            {/* Crimson rule + tagline */}
-            <div style={{ display: "flex", alignItems: "center", gap: "0.4rem", marginTop: "3px" }}>
-              <div style={{ width: 18, height: 1, background: "#8B1930" }} />
+          <a href="/" style={{ textDecoration: "none", flexShrink: 0, display: "flex", alignItems: "center", gap: "0.75rem" }} onClick={close}>
+
+            {/* SVG emblem */}
+            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
+              {/* Outer ring */}
+              <circle cx="21" cy="21" r="20" stroke="#8B1930" strokeWidth="1.1"/>
+              {/* Inner ring */}
+              <circle cx="21" cy="21" r="15.5" stroke="#8B1930" strokeWidth="0.45" opacity="0.45"/>
+              {/* Small top diamond pip */}
+              <path d="M21 4.5 L22.3 6.5 L21 8.5 L19.7 6.5Z" fill="#8B1930"/>
+              {/* R letterform — stem */}
+              <line x1="14.5" y1="13" x2="14.5" y2="30" stroke="#8B1930" strokeWidth="1.9" strokeLinecap="round"/>
+              {/* R bowl */}
+              <path d="M14.5 13 L20.5 13 C24 13 26.5 15 26.5 18 C26.5 21 24 22.8 20.5 22.8 L14.5 22.8" stroke="#8B1930" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+              {/* R leg */}
+              <line x1="20" y1="22.8" x2="27.5" y2="30" stroke="#8B1930" strokeWidth="1.9" strokeLinecap="round"/>
+            </svg>
+
+            {/* Wordmark */}
+            <div style={{ lineHeight: 1 }}>
               <div style={{
                 fontFamily: "var(--font-poppins)",
-                fontSize: "0.35rem",
-                fontWeight: 500,
-                letterSpacing: "0.3em",
+                fontSize: "0.38rem",
+                fontWeight: 600,
+                letterSpacing: "0.38em",
                 textTransform: "uppercase",
-                color: "#bbb",
+                color: "#8B1930",
+                marginBottom: "1px",
                 whiteSpace: "nowrap",
               }}>
-                Luxury Nail Studio
+                Nails by
+              </div>
+              <div style={{
+                fontFamily: "var(--font-great-vibes)",
+                fontSize: "1.75rem",
+                color: "#111",
+                lineHeight: 1,
+                whiteSpace: "nowrap",
+              }}>
+                Ravneet
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "0.4rem", marginTop: "3px" }}>
+                <div style={{ width: 18, height: 1, background: "#8B1930" }} />
+                <div style={{
+                  fontFamily: "var(--font-poppins)",
+                  fontSize: "0.35rem",
+                  fontWeight: 500,
+                  letterSpacing: "0.3em",
+                  textTransform: "uppercase",
+                  color: "#bbb",
+                  whiteSpace: "nowrap",
+                }}>
+                  Luxury Nail Studio
+                </div>
               </div>
             </div>
           </a>
