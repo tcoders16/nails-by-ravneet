@@ -1,26 +1,151 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-playfair: "Bodoni Moda", serif;
+  --font-poppins: "Inter", sans-serif;
+  --font-great-vibes: "Great Vibes", cursive;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ─── Keyframes ─────────────────────────────────────────── */
+@keyframes marquee {
+  from { transform: translateX(0%); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes marquee-reverse {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0%); }
+}
+@keyframes ping {
+  75%, 100% { transform: scale(2.2); opacity: 0; }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 2px rgba(34,197,94,0.25); }
+  50% { box-shadow: 0 0 0 5px rgba(34,197,94,0); }
 }
+
+/* ─── Reset & Base ──────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; cursor: none !important; }
+@media (hover: none) { *, *::before, *::after { cursor: auto !important; } }
+
+html { scroll-behavior: smooth; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #FAF8F5;
+  color: #111;
+  font-family: var(--font-poppins), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+::selection { background: #111; color: #fff; }
+
+/* ─── Eyebrow label — with ✦ accent ────────────────────── */
+.eyebrow {
+  font-family: var(--font-poppins);
+  font-size: 0.58rem;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #999;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+.eyebrow::before {
+  content: "✦";
+  font-size: 0.45rem;
+  color: #8B1930;
+  flex-shrink: 0;
+}
+
+/* ─── Nav link ──────────────────────────────────────────── */
+.nav-link {
+  position: relative;
+  font-family: var(--font-poppins);
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #444;
+  text-decoration: none;
+  padding-bottom: 3px;
+  transition: color 0.2s ease;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 0; height: 1px;
+  background: #8B1930;
+  transition: width 0.3s cubic-bezier(0.22,1,0.36,1);
+}
+.nav-link:hover { color: #111; }
+.nav-link:hover::after { width: 100%; }
+
+/* ─── Buttons — pill shape ──────────────────────────────── */
+.btn-dark {
+  font-family: var(--font-poppins);
+  font-size: 0.64rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  background: #111;
+  color: #fff;
+  padding: 0.9rem 2rem;
+  border: 1.5px solid #111;
+  border-radius: 100px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: background 0.22s ease, color 0.22s ease, border-color 0.22s ease;
+  white-space: nowrap;
+}
+.btn-dark:hover  { background: transparent; color: #111; }
+.btn-dark:disabled { opacity: 0.55; pointer-events: none; }
+
+.btn-outline {
+  font-family: var(--font-poppins);
+  font-size: 0.64rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  background: transparent;
+  color: #111;
+  padding: 0.9rem 2rem;
+  border: 1.5px solid #D4D0CB;
+  border-radius: 100px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: border-color 0.22s ease, color 0.22s ease;
+  white-space: nowrap;
+}
+.btn-outline:hover { border-color: #111; color: #111; }
+
+/* ─── Form inputs ───────────────────────────────────────── */
+.form-input {
+  font-family: var(--font-poppins);
+  font-size: 0.84rem;
+  font-weight: 300;
+  color: #111;
+  background: #fff;
+  border: 1.5px solid #E4E0DB;
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.form-input::placeholder { color: #C8C4BF; }
+.form-input:focus {
+  border-color: #8B1930;
+  box-shadow: 0 0 0 3px rgba(139, 25, 48, 0.08);
 }
