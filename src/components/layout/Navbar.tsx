@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
+import ClientLogo from "./ClientLogo";
 
 const links = [
   { label: "Services", href: "/services" },
@@ -49,21 +50,8 @@ export default function Navbar() {
           {/* ── Logo mark ── */}
           <a href="/" style={{ textDecoration: "none", flexShrink: 0, display: "flex", alignItems: "center", gap: "0.75rem" }} onClick={close}>
 
-            {/* SVG emblem */}
-            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-              {/* Outer ring */}
-              <circle cx="21" cy="21" r="20" stroke="#8B1930" strokeWidth="1.1"/>
-              {/* Inner ring */}
-              <circle cx="21" cy="21" r="15.5" stroke="#8B1930" strokeWidth="0.45" opacity="0.45"/>
-              {/* Small top diamond pip */}
-              <path d="M21 4.5 L22.3 6.5 L21 8.5 L19.7 6.5Z" fill="#8B1930"/>
-              {/* R letterform — stem */}
-              <line x1="14.5" y1="13" x2="14.5" y2="30" stroke="#8B1930" strokeWidth="1.9" strokeLinecap="round"/>
-              {/* R bowl */}
-              <path d="M14.5 13 L20.5 13 C24 13 26.5 15 26.5 18 C26.5 21 24 22.8 20.5 22.8 L14.5 22.8" stroke="#8B1930" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
-              {/* R leg */}
-              <line x1="20" y1="22.8" x2="27.5" y2="30" stroke="#8B1930" strokeWidth="1.9" strokeLinecap="round"/>
-            </svg>
+            {/* SVG emblem — managed by switch.sh */}
+            <ClientLogo />
 
             {/* Wordmark */}
             <div style={{ lineHeight: 1 }}>
