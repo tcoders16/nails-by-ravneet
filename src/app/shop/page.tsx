@@ -108,7 +108,7 @@ export default function ShopPage() {
 
         <motion.div style={{ y: heroY, opacity: heroOpacity, position: "relative", zIndex: 1, textAlign: "center", maxWidth: 800, margin: "0 auto" }} className="px-6 md:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: EASE }}>
-            <span style={{ fontFamily: "var(--font-poppins)", fontSize: "0.62rem", fontWeight: 500, letterSpacing: "0.32em", textTransform: "uppercase", color: "rgba(255,255,255,0.4)" }}>✦ &nbsp; Ravneet&apos;s Curated Picks</span>
+            <span style={{ fontFamily: "var(--font-poppins)", fontSize: "0.62rem", fontWeight: 500, letterSpacing: "0.32em", textTransform: "uppercase", color: "rgba(255,255,255,0.4)" }}>✦ &nbsp; Tisha&apos;s Curated Picks</span>
           </motion.div>
           <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1, ease: EASE }}
             style={{ fontFamily: "var(--font-playfair)", fontSize: "clamp(3.5rem,10vw,7.5rem)", fontWeight: 700, lineHeight: 0.88, color: "#fff", marginTop: "1rem", marginBottom: "1.5rem" }}>

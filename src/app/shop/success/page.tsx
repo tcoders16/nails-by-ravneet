@@ -38,7 +38,7 @@ export default function ShopSuccess() {
           {[
             "Order confirmation sent to your email",
             "Tracked shipping with delivery updates",
-            "Questions? Contact Ravneet directly",
+            "Questions? Contact Tisha directly",
           ].map(t => (
             <div key={t} style={{ display: "flex", alignItems: "center", gap: "0.6rem", marginBottom: "0.5rem" }}>
               <span style={{ width: 5, height: 5, borderRadius: "50%", background: "#8B1930", flexShrink: 0 }} />

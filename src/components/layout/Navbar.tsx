@@ -74,7 +74,7 @@ export default function Navbar() {
                 lineHeight: 1,
                 whiteSpace: "nowrap",
               }}>
-                Ravneet
+                Tisha
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "0.4rem", marginTop: "3px" }}>
                 <div style={{ width: 18, height: 1, background: "#8B1930" }} />

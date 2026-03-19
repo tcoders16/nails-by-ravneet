@@ -438,8 +438,8 @@ export default function BookPage() {
       </h2>
       <p style={{ fontFamily: "var(--font-poppins)", fontSize: "0.84rem", color: "#666", lineHeight: 1.8, marginBottom: "2rem" }}>
         {booking.type === "nail"
-          ? <>Confirmation sent to <strong>{nailForm.email}</strong>. Ravneet will confirm within 24 hours.</>
-          : <>Confirmation sent to <strong>{consForm.email}</strong>. Ravneet has been notified and will be ready for your call.</>
+          ? <>Confirmation sent to <strong>{nailForm.email}</strong>. Tisha will confirm within 24 hours.</>
+          : <>Confirmation sent to <strong>{consForm.email}</strong>. Tisha has been notified and will be ready for your call.</>
         }
       </p>
 

@@ -108,7 +108,7 @@ export default function BookingCTA() {
                 </div>
                 <h3 style={{ fontFamily: "var(--font-playfair)", fontSize: "1.6rem", fontWeight: 700, color: "#fff", marginBottom: "0.5rem" }}>Message Sent!</h3>
                 <p style={{ fontFamily: "var(--font-poppins)", fontSize: "0.83rem", color: "rgba(255,255,255,0.5)", lineHeight: 1.7 }}>
-                  Thanks for reaching out. Ravneet will get back to you within 24 hours.
+                  Thanks for reaching out. Tisha will get back to you within 24 hours.
                 </p>
               </motion.div>
             ) : (

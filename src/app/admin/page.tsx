@@ -139,7 +139,7 @@ export default function AdminPage() {
           <div style={{ position: "relative", textAlign: "center" }}>
             <div style={{ position: "absolute", inset: "-60px", borderRadius: "50%", background: "radial-gradient(circle, rgba(139,25,48,0.15) 0%, transparent 70%)", pointerEvents: "none" }} />
             <div style={{ fontFamily: "var(--font-playfair)", fontSize: "clamp(4rem,8vw,7rem)", fontWeight: 700, lineHeight: 0.85, color: "rgba(255,255,255,0.04)", userSelect: "none" }}>
-              Ravneet
+              Tisha
             </div>
             <div style={{ marginTop: "2rem", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
               {["Manage your availability", "View upcoming appointments", "Join video consultations"].map((t, i) => (
@@ -177,7 +177,7 @@ export default function AdminPage() {
           </div>
 
           <h1 style={{ fontFamily: "var(--font-playfair)", fontSize: "2rem", fontWeight: 700, color: "#fff", lineHeight: 1, marginBottom: "0.5rem" }}>
-            Welcome back,<br />Ravneet
+            Welcome back,<br />Tisha
           </h1>
           <p style={{ fontFamily: "var(--font-poppins)", fontSize: "0.8rem", color: "rgba(255,255,255,0.35)", marginBottom: "2.5rem", lineHeight: 1.6 }}>
             Sign in to manage your calendar and appointments.

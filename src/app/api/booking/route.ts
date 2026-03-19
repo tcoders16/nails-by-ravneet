@@ -35,7 +35,7 @@ export async function POST(req: NextRequest) {
     // const resend = new Resend(process.env.RESEND_API_KEY);
     // await resend.emails.send({
     //   from: 'noreply@nailsbytisha.com',
-    //   to: 'ravneet@nailsbytisha.com',
+    //   to: 'tisha@nailsbytisha.com',
     //   subject: `New Booking: ${body.service} from ${body.name}`,
     //   text: `Name: ${body.name}\nEmail: ${body.email}\nPhone: ${body.phone}\nService: ${body.service}\nMessage: ${body.message}`,
     // });
