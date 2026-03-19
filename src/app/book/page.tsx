@@ -328,7 +328,7 @@ export default function BookPage() {
         {/* Summary card */}
         <div style={{ background: "#111", borderRadius: "20px", padding: "2rem", color: "#fff", alignSelf: "start" }}>
           <div style={{ fontFamily: "var(--font-poppins)", fontSize: "0.6rem", fontWeight: 600, letterSpacing: "0.2em", textTransform: "uppercase", color: "rgba(255,255,255,0.4)", marginBottom: "1.25rem" }}>Step 3 of 3 · Your Booking</div>
-          <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "1.4rem", color: "rgba(255,255,255,0.5)", marginBottom: "1rem" }}>Nails by Ravneet</div>
+          <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "1.4rem", color: "rgba(255,255,255,0.5)", marginBottom: "1rem" }}>Nails by Tisha</div>
           <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: "14px", padding: "1.25rem", marginBottom: "1rem" }}>
             <div style={{ fontFamily: "var(--font-playfair)", fontSize: "1.4rem", fontWeight: 700, color: "#fff", lineHeight: 1.2 }}>
               {new Date(selectedSlot.date + "T12:00").toLocaleDateString("en-US", { weekday: "short", month: "long", day: "numeric" })}
@@ -484,7 +484,7 @@ export default function BookPage() {
       </div>
 
       <a href="/" style={{ fontFamily: "var(--font-poppins)", fontSize: "0.72rem", color: "#aaa", textDecoration: "none", borderBottom: "1px solid #E8E4DE" }}>
-        ← Back to Nails by Ravneet
+        ← Back to Nails by Tisha
       </a>
     </motion.div>
   );
@@ -516,7 +516,7 @@ export default function BookPage() {
       {/* Top bar */}
       <div style={{ background: "#fff", borderBottom: "1px solid #E8E4DE", padding: "1.1rem 1.5rem", display: "flex", alignItems: "center", justifyContent: "space-between", position: "sticky", top: 0, zIndex: 50 }}>
         <a href="/" style={{ textDecoration: "none" }}>
-          <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "1.6rem", color: "#111", lineHeight: 1 }}>Nails by Ravneet</div>
+          <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "1.6rem", color: "#111", lineHeight: 1 }}>Nails by Tisha</div>
           <div style={{ fontFamily: "var(--font-poppins)", fontSize: "0.48rem", fontWeight: 500, letterSpacing: "0.35em", textTransform: "uppercase", color: "#bbb", marginTop: "3px" }}>Luxury Nail Studio</div>
         </a>
         <div style={{ display: "flex", alignItems: "center", gap: "1.5rem" }}>

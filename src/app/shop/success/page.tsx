@@ -24,7 +24,7 @@ export default function ShopSuccess() {
 
         {/* Brand */}
         <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "1.5rem", color: "#8B1930", marginBottom: "1rem" }}>
-          Nails by Ravneet
+          Nails by Tisha
         </div>
 
         <h1 style={{ fontFamily: "var(--font-playfair)", fontSize: "clamp(2rem,6vw,3rem)", fontWeight: 700, color: "#111", lineHeight: 1, marginBottom: "1rem" }}>
@@ -62,7 +62,7 @@ export default function ShopSuccess() {
             fontFamily: "var(--font-poppins)", fontSize: "0.68rem", fontWeight: 500,
             color: "#888", textDecoration: "none",
           }}>
-            Back to Nails by Ravneet <ArrowRight size={13} />
+            Back to Nails by Tisha <ArrowRight size={13} />
           </a>
         </div>
       </motion.div>

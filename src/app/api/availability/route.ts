@@ -14,7 +14,7 @@ export async function GET() {
 
 export async function POST(req: NextRequest) {
   const adminPass = req.headers.get("x-admin-password");
-  if (adminPass !== (process.env.ADMIN_PASSWORD || "ravneet123")) {
+  if (adminPass !== (process.env.ADMIN_PASSWORD || "tisha123")) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
   const body = await req.json();

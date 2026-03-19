@@ -24,8 +24,8 @@ export default function CallPage() {
   const peerRef = useRef<import("peerjs").Peer | null>(null);
   const callRef = useRef<import("peerjs").MediaConnection | null>(null);
 
-  const hostId = `nailsravneet-${roomId}-host`;
-  const guestId = `nailsravneet-${roomId}-guest`;
+  const hostId = `nailstisha-${roomId}-host`;
+  const guestId = `nailstisha-${roomId}-guest`;
 
   const cleanup = useCallback(() => {
     callRef.current?.close();
@@ -147,7 +147,7 @@ export default function CallPage() {
 
       {/* Brand */}
       <div style={{ position: "fixed", top: "1.25rem", left: "1.5rem", fontFamily: "var(--font-great-vibes)", fontSize: "1.4rem", color: "#fff", opacity: 0.7 }}>
-        Nails by Ravneet
+        Nails by Tisha
       </div>
 
       {/* Share link */}

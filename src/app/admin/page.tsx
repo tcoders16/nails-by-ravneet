@@ -130,7 +130,7 @@ export default function AdminPage() {
       }}>
         {/* Logo */}
         <div>
-          <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "2rem", color: "#fff", lineHeight: 1 }}>Nails by Ravneet</div>
+          <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "2rem", color: "#fff", lineHeight: 1 }}>Nails by Tisha</div>
           <div style={{ fontFamily: "var(--font-poppins)", fontSize: "0.5rem", letterSpacing: "0.35em", textTransform: "uppercase", color: "rgba(255,255,255,0.25)", marginTop: "4px" }}>Admin Portal</div>
         </div>
 
@@ -154,7 +154,7 @@ export default function AdminPage() {
         </div>
 
         <div style={{ fontFamily: "var(--font-poppins)", fontSize: "0.6rem", color: "rgba(255,255,255,0.15)", letterSpacing: "0.1em" }}>
-          © {new Date().getFullYear()} Nails by Ravneet · All rights reserved
+          © {new Date().getFullYear()} Nails by Tisha · All rights reserved
         </div>
       </div>
 
@@ -167,7 +167,7 @@ export default function AdminPage() {
         >
           {/* Mobile logo */}
           <div className="lg:hidden" style={{ marginBottom: "2.5rem", textAlign: "center" }}>
-            <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "1.8rem", color: "#fff", lineHeight: 1 }}>Nails by Ravneet</div>
+            <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "1.8rem", color: "#fff", lineHeight: 1 }}>Nails by Tisha</div>
             <div style={{ fontFamily: "var(--font-poppins)", fontSize: "0.5rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "rgba(255,255,255,0.3)", marginTop: "4px" }}>Admin Portal</div>
           </div>
 
@@ -262,7 +262,7 @@ export default function AdminPage() {
       {/* Topbar */}
       <div style={{ background: "#fff", borderBottom: "1px solid #E8E4DE", padding: "0.9rem 1.5rem", display: "flex", alignItems: "center", justifyContent: "space-between", position: "sticky", top: 0, zIndex: 50 }}>
         <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
-          <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "1.3rem", color: "#111" }}>Nails by Ravneet</div>
+          <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "1.3rem", color: "#111" }}>Nails by Tisha</div>
           <span style={{ fontFamily: "var(--font-poppins)", fontSize: "0.5rem", fontWeight: 600, letterSpacing: "0.2em", textTransform: "uppercase", color: "#fff", background: "#8B1930", padding: "0.2rem 0.6rem", borderRadius: "100px" }}>Admin</span>
         </div>
         <div style={{ display: "flex", gap: "0.4rem", alignItems: "center" }}>

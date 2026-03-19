@@ -26,7 +26,7 @@ const INFO = [
   {
     icon: <Mail size={18} />,
     label: "Email",
-    lines: ["hello@nailsbyravneet.com"],
+    lines: ["hello@nailsbytisha.com"],
     note: "I respond within 24 hours",
   },
   {
@@ -135,7 +135,7 @@ export default function ContactPage() {
                   onMouseLeave={e => e.currentTarget.style.color = "#111"}
                 >
                   <Instagram size={18} />
-                  @nailsbyravneet
+                  @nailsbytisha
                 </a>
               </div>
 

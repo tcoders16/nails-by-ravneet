@@ -29,7 +29,7 @@ export async function sendBookingNotification(opts: {
 
   // Notify Ravneet
   await transporter.sendMail({
-    from: `"Nails by Ravneet" <${process.env.EMAIL_USER}>`,
+    from: `"Nails by Tisha" <${process.env.EMAIL_USER}>`,
     to: notifyEmail,
     subject: `📅 New Consultation — ${opts.clientName} on ${opts.date}`,
     html: `
@@ -50,7 +50,7 @@ export async function sendBookingNotification(opts: {
 
   // Confirm to client
   await transporter.sendMail({
-    from: `"Nails by Ravneet" <${process.env.EMAIL_USER}>`,
+    from: `"Nails by Tisha" <${process.env.EMAIL_USER}>`,
     to: opts.clientEmail,
     subject: `Your consultation with Ravneet is confirmed ✨`,
     html: `
