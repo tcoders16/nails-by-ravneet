@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Sans, Pinyon_Script } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { CLIENT } from "@/config/client";
 import "./globals.css";
 
 // Cormorant Garamond — ultra-luxury high-contrast fashion serif (used by Vogue, luxury brands)
@@ -29,9 +30,8 @@ const pinyonScript = Pinyon_Script({
 });
 
 export const metadata: Metadata = {
-  title: "Nails by Tisha | Luxury Nail Art Studio",
-  description:
-    "Bespoke nail art that tells your story. Premium gel, chrome, and custom nail art by Tisha — where beauty meets artistry.",
+  title: CLIENT.meta.title,
+  description: CLIENT.meta.description,
   keywords: ["nail art", "nail salon", "gel nails", "chrome nails", "luxury nail studio"],
   icons: {
     icon: "/favicon.svg",
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
     apple: "/favicon.svg",
   },
   openGraph: {
-    title: "Nails by Tisha",
-    description: "Bespoke nail art that tells your story.",
+    title: CLIENT.meta.ogTitle,
+    description: CLIENT.meta.ogDescription,
     type: "website",
   },
 };

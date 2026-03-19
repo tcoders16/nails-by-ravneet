@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import MagneticButton from "@/components/ui/MagneticButton";
+import { CLIENT } from "@/config/client";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 const stats = [
@@ -35,7 +36,7 @@ export default function Hero() {
           }}>
             <img
               src="https://images.unsplash.com/photo-1672815554809-37e355eddd24?auto=format&fit=crop&w=900&q=80"
-              alt="Nail art by Tisha"
+              alt={`Nail art by ${CLIENT.artistName}`}
               style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block" }}
             />
             {/* Bottom gradient */}
@@ -64,7 +65,7 @@ export default function Hero() {
             }}
           >
             <div style={{ width: 5, height: 5, borderRadius: "50%", background: "#8B1930", flexShrink: 0 }} />
-            <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "1rem", color: "#111", lineHeight: 1 }}>Tisha</div>
+            <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "1rem", color: "#111", lineHeight: 1 }}>{CLIENT.artistName}</div>
             <div style={{ width: 1, height: 12, background: "#E0DDD8" }} />
             <div style={{ fontFamily: "var(--font-poppins)", fontSize: "0.45rem", fontWeight: 500, letterSpacing: "0.22em", textTransform: "uppercase", color: "#777" }}>Nail Artist</div>
           </motion.div>
@@ -224,7 +225,7 @@ export default function Hero() {
               maxWidth: "360px", marginTop: "2rem", marginBottom: "2rem",
             }}
           >
-            Bespoke gel, chrome & hand-painted nail art by Tisha.
+            Bespoke gel, chrome & hand-painted nail art by {CLIENT.artistName}.
             Every set, a wearable masterpiece.
           </motion.p>
 
@@ -271,7 +272,7 @@ export default function Hero() {
           }}>
             <img
               src="https://images.unsplash.com/photo-1672815554809-37e355eddd24?auto=format&fit=crop&w=900&q=80"
-              alt="Nail art by Tisha"
+              alt={`Nail art by ${CLIENT.artistName}`}
               style={{
                 width: "100%",
                 height: "100%",
@@ -309,7 +310,7 @@ export default function Hero() {
               }}
             >
               <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#8B1930", flexShrink: 0 }} />
-              <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "1.15rem", color: "#111", lineHeight: 1 }}>Tisha</div>
+              <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "1.15rem", color: "#111", lineHeight: 1 }}>{CLIENT.artistName}</div>
               <div style={{ width: 1, height: 14, background: "#E0DDD8", flexShrink: 0 }} />
               <div style={{ fontFamily: "var(--font-poppins)", fontSize: "0.5rem", fontWeight: 500, letterSpacing: "0.22em", textTransform: "uppercase", color: "#777" }}>Nail Artist</div>
             </motion.div>

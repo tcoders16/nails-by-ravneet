@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import SectionReveal from "@/components/ui/SectionReveal";
 import MagneticButton from "@/components/ui/MagneticButton";
+import { CLIENT } from "@/config/client";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 const stats  = [{ n: "500+", label: "Clients" }, { n: "8+", label: "Years" }, { n: "50+", label: "Styles" }];
@@ -25,7 +26,7 @@ export default function About() {
           <div style={{ position: "relative" }}>
             <img
               src="/images/hero/about.jpg"
-              alt="Tisha — Nail Artist"
+              alt={`${CLIENT.artistName} — Nail Artist`}
               style={{
                 width: "100%", maxWidth: 460,
                 aspectRatio: "3/4",
@@ -34,7 +35,6 @@ export default function About() {
               }}
             />
 
-            {/* Stat cards — desktop only to avoid overflow */}
             {stats.map(({ n, label }, i) => (
               <motion.div
                 key={label}
@@ -60,7 +60,6 @@ export default function About() {
               </motion.div>
             ))}
 
-            {/* Name tag */}
             <div style={{
               position: "absolute", bottom: "1.5rem", left: "1.5rem",
               background: "rgba(255,255,255,0.92)",
@@ -69,12 +68,11 @@ export default function About() {
               borderLeft: "2px solid #8B1930",
               borderRadius: "10px",
             }}>
-              <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "1.3rem", color: "#111", lineHeight: 1 }}>Tisha</div>
+              <div style={{ fontFamily: "var(--font-great-vibes)", fontSize: "1.3rem", color: "#111", lineHeight: 1 }}>{CLIENT.artistName}</div>
               <div className="eyebrow" style={{ marginTop: "2px" }}>Nail Artist & Educator</div>
             </div>
           </div>
 
-          {/* Stat strip — mobile only */}
           <div className="flex md:hidden" style={{ marginTop: "1.25rem", borderTop: "1px solid #E8E4DE" }}>
             {stats.map(({ n, label }, i) => (
               <div key={label} style={{
@@ -102,14 +100,10 @@ export default function About() {
           <div style={{ width: 32, height: 1.5, background: "#8B1930", marginBottom: "1.5rem" }} />
 
           <p style={{ fontFamily: "var(--font-poppins)", fontSize: "0.87rem", color: "#555", lineHeight: 1.8, marginBottom: "1rem" }}>
-            It started at age fourteen with a bottle of drugstore polish and a bathroom mirror. Tisha
-            wasn&apos;t trying to build a brand — she was just obsessed. Flash-forward eight years, and that
-            obsession turned into a studio where every client leaves with nails that feel like a piece of
-            wearable art.
+            {CLIENT.about.story1}
           </p>
           <p style={{ fontFamily: "var(--font-poppins)", fontSize: "0.87rem", color: "#555", lineHeight: 1.8, marginBottom: "2rem" }}>
-            No rushed appointments. No cookie-cutter sets. Just Tisha, her tools, and a genuine
-            conversation about exactly what you want — then delivering it better than you imagined.
+            {CLIENT.about.story2}
           </p>
 
           <div style={{ borderTop: "1px solid #E8E4DE", paddingTop: "1.5rem", marginBottom: "2rem" }}>
@@ -121,7 +115,7 @@ export default function About() {
             ))}
           </div>
 
-          <MagneticButton href="#booking">Book with Tisha</MagneticButton>
+          <MagneticButton href="#booking">{CLIENT.about.bookCta}</MagneticButton>
         </SectionReveal>
       </div>
     </section>

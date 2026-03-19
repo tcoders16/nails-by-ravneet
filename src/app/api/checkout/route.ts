@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
+import { CLIENT } from "@/config/client";
 import { PRODUCTS } from "@/data/products";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY ?? "sk_test_placeholder", {
@@ -54,7 +55,7 @@ export async function POST(req: NextRequest) {
     cancel_url: `${origin}/shop?cancelled=1`,
     shipping_address_collection: { allowed_countries: ["US", "CA", "GB", "AU", "IN"] },
     billing_address_collection: "required",
-    metadata: { source: "nails-by-tisha" },
+    metadata: { source: CLIENT.stripeSource },
   });
 
   return NextResponse.json({ url: session.url });

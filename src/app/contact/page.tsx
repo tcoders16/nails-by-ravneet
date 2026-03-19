@@ -7,6 +7,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ClientLayout from "@/components/ClientLayout";
 import { MapPin, Phone, Mail, Clock, Instagram, Send } from "lucide-react";
+import { CLIENT } from "@/config/client";
 
 const CustomCursor = dynamic(() => import("@/components/cursor/CustomCursor"), { ssr: false });
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -26,7 +27,7 @@ const INFO = [
   {
     icon: <Mail size={18} />,
     label: "Email",
-    lines: ["hello@nailsbytisha.com"],
+    lines: ["{CLIENT.email}"],
     note: "I respond within 24 hours",
   },
   {
@@ -135,7 +136,7 @@ export default function ContactPage() {
                   onMouseLeave={e => e.currentTarget.style.color = "#111"}
                 >
                   <Instagram size={18} />
-                  @nailsbytisha
+                  {CLIENT.instagram}
                 </a>
               </div>
 

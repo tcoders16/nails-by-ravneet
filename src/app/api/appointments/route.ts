@@ -1,10 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
+import { CLIENT } from "@/config/client";
 import { getAppointments, bookSlot } from "@/lib/store";
 import { sendBookingNotification } from "@/lib/email";
 
 export async function GET(req: NextRequest) {
   const adminPass = req.headers.get("x-admin-password");
-  if (adminPass !== (process.env.ADMIN_PASSWORD || "tisha123")) {
+  if (adminPass !== (process.env.ADMIN_PASSWORD || CLIENT.adminPassword)) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
   return NextResponse.json(getAppointments());

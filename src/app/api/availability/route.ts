@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { CLIENT } from "@/config/client";
 import { generateSlots, toggleSlotBlock, toggleDayBlock } from "@/lib/store";
 
 export const dynamic = "force-dynamic";
@@ -14,7 +15,7 @@ export async function GET() {
 
 export async function POST(req: NextRequest) {
   const adminPass = req.headers.get("x-admin-password");
-  if (adminPass !== (process.env.ADMIN_PASSWORD || "tisha123")) {
+  if (adminPass !== (process.env.ADMIN_PASSWORD || CLIENT.adminPassword)) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
   const body = await req.json();

@@ -1,4 +1,5 @@
 import nodemailer from "nodemailer";
+import { CLIENT } from "@/config/client";
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
@@ -29,7 +30,7 @@ export async function sendBookingNotification(opts: {
 
   // Notify Tisha
   await transporter.sendMail({
-    from: `"Nails by Tisha" <${process.env.EMAIL_USER}>`,
+    from: `"${CLIENT.brandName}" <${process.env.EMAIL_USER}>`,
     to: notifyEmail,
     subject: `📅 New Consultation — ${opts.clientName} on ${opts.date}`,
     html: `
@@ -50,14 +51,14 @@ export async function sendBookingNotification(opts: {
 
   // Confirm to client
   await transporter.sendMail({
-    from: `"Nails by Tisha" <${process.env.EMAIL_USER}>`,
+    from: `"${CLIENT.brandName}" <${process.env.EMAIL_USER}>`,
     to: opts.clientEmail,
-    subject: `Your consultation with Tisha is confirmed ✨`,
+    subject: `Your consultation with ${CLIENT.artistName} is confirmed ✨`,
     html: `
       <div style="font-family:sans-serif;max-width:480px;color:#111">
         <h2 style="color:#8B1930">Your Consultation is Confirmed!</h2>
         <p>Hi ${opts.clientName},</p>
-        <p>Your 30-minute virtual nail consultation with Tisha is booked for:</p>
+        <p>Your 30-minute virtual nail consultation with ${CLIENT.artistName} is booked for:</p>
         <p style="font-size:18px;font-weight:bold">${dateFormatted}</p>
         <hr style="border-color:#eee"/>
         <p>At the time of your appointment, click the link below to join the video call:</p>
@@ -68,7 +69,7 @@ export async function sendBookingNotification(opts: {
           Please save this link — you'll need it to join your call.<br/>
           ${callUrl}
         </p>
-        <p style="margin-top:24px">See you soon! 💅<br/><em>Tisha</em></p>
+        <p style="margin-top:24px">See you soon! 💅<br/><em>${CLIENT.artistName}</em></p>
       </div>
     `,
   });

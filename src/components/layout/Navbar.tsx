@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import ClientLogo from "./ClientLogo";
+import { CLIENT } from "@/config/client";
 
 const links = [
   { label: "Services", href: "/services" },
@@ -74,7 +75,7 @@ export default function Navbar() {
                 lineHeight: 1,
                 whiteSpace: "nowrap",
               }}>
-                Tisha
+                {CLIENT.artistName}
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "0.4rem", marginTop: "3px" }}>
                 <div style={{ width: 18, height: 1, background: "#8B1930" }} />

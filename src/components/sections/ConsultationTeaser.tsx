@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Video, Clock, Calendar } from "lucide-react";
+import { CLIENT } from "@/config/client";
 import SectionReveal from "@/components/ui/SectionReveal";
 
 export default function ConsultationTeaser() {
@@ -16,7 +17,7 @@ export default function ConsultationTeaser() {
               ✦ &nbsp; Free 30-Min Call
             </span>
             <h2 style={{ fontFamily: "var(--font-playfair)", fontSize: "clamp(2.5rem,7vw,4.5rem)", fontWeight: 700, lineHeight: 0.95, color: "#fff", marginTop: "0.6rem", marginBottom: "1.25rem" }}>
-              Meet Tisha,<br />Face to Face
+              Meet {CLIENT.artistName},<br />Face to Face
             </h2>
             <div style={{ width: 32, height: 1.5, background: "#8B1930", marginBottom: "1.5rem" }} />
             <p style={{ fontFamily: "var(--font-poppins)", fontSize: "0.86rem", color: "rgba(255,255,255,0.5)", lineHeight: 1.8, maxWidth: 360, marginBottom: "2.5rem" }}>
